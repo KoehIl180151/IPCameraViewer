@@ -16,6 +16,8 @@ namespace IPCameraViever1._0
     public partial class Form1 : Form
     {
         MJPEGStream stream;
+        bool mouseDown;
+        private Point offset;
 
         public Form1()
         {
@@ -94,6 +96,27 @@ namespace IPCameraViever1._0
         private void cmdWindow_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Normal;
+        }
+
+        private void mouseDOwn_event(object sender, MouseEventArgs e)
+        {
+            offset.X = e.X;
+            offset.Y = e.Y;
+            mouseDown = true;
+        }
+
+        private void mouseMove_event(object sender, MouseEventArgs e)
+        {
+            if (mouseDown == true)
+            {
+                Point currentPos = PointToScreen(e.Location);
+                Location = new Point(currentPos.X - offset.X, currentPos.Y - offset.Y);
+            }
+        }
+
+        private void mouseUp_event(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
         }
     }
 }

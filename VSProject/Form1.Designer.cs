@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.cmdStart = new System.Windows.Forms.Button();
             this.cmdStop = new System.Windows.Forms.Button();
             this.cmdClose = new System.Windows.Forms.Button();
@@ -40,6 +41,7 @@
             this.lblIPAdress = new System.Windows.Forms.Label();
             this.txtIPInput = new System.Windows.Forms.TextBox();
             this.imgOutput = new System.Windows.Forms.PictureBox();
+            this.pnlDrag = new System.Windows.Forms.Panel();
             this.pnlControls.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlIPInput.SuspendLayout();
@@ -104,11 +106,12 @@
             this.pnlControls.Controls.Add(this.cmdMinimize);
             this.pnlControls.Controls.Add(this.cmdMaximize);
             this.pnlControls.Controls.Add(this.cmdWindow);
+            this.pnlControls.Controls.Add(this.pnlDrag);
             this.pnlControls.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlControls.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.pnlControls.Location = new System.Drawing.Point(772, 0);
             this.pnlControls.Name = "pnlControls";
-            this.pnlControls.Size = new System.Drawing.Size(106, 544);
+            this.pnlControls.Size = new System.Drawing.Size(106, 494);
             this.pnlControls.TabIndex = 8;
             // 
             // cmdWindow
@@ -133,7 +136,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(772, 544);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(772, 494);
             this.tableLayoutPanel1.TabIndex = 13;
             // 
             // pnlIPInput
@@ -141,7 +144,7 @@
             this.pnlIPInput.Controls.Add(this.lblIPAdress);
             this.pnlIPInput.Controls.Add(this.txtIPInput);
             this.pnlIPInput.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlIPInput.Location = new System.Drawing.Point(3, 507);
+            this.pnlIPInput.Location = new System.Drawing.Point(3, 457);
             this.pnlIPInput.Name = "pnlIPInput";
             this.pnlIPInput.Size = new System.Drawing.Size(766, 34);
             this.pnlIPInput.TabIndex = 13;
@@ -167,15 +170,28 @@
             this.imgOutput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.imgOutput.Location = new System.Drawing.Point(3, 3);
             this.imgOutput.Name = "imgOutput";
-            this.imgOutput.Size = new System.Drawing.Size(766, 498);
+            this.imgOutput.Size = new System.Drawing.Size(766, 448);
             this.imgOutput.TabIndex = 12;
             this.imgOutput.TabStop = false;
+            // 
+            // pnlDrag
+            // 
+            this.pnlDrag.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pnlDrag.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlDrag.BackgroundImage")));
+            this.pnlDrag.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlDrag.Location = new System.Drawing.Point(3, 309);
+            this.pnlDrag.Name = "pnlDrag";
+            this.pnlDrag.Size = new System.Drawing.Size(100, 182);
+            this.pnlDrag.TabIndex = 14;
+            this.pnlDrag.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouseDOwn_event);
+            this.pnlDrag.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mouseMove_event);
+            this.pnlDrag.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mouseUp_event);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 544);
+            this.ClientSize = new System.Drawing.Size(878, 494);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.pnlControls);
             this.Name = "Form1";
@@ -202,6 +218,7 @@
         private System.Windows.Forms.Label lblIPAdress;
         private System.Windows.Forms.TextBox txtIPInput;
         private System.Windows.Forms.PictureBox imgOutput;
+        private System.Windows.Forms.Panel pnlDrag;
     }
 }
 
