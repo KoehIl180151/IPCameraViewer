@@ -36,7 +36,7 @@ namespace IPCameraViever1._0
             FormBorderStyle = FormBorderStyle.None;
         }
 
-        private void Stream_NewFrame(object sender, NewFrameEventArgs eventArgs)
+    private void Stream_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             int x, y;
 
