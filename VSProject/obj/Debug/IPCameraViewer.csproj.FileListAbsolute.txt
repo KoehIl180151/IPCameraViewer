@@ -26,9 +26,9 @@ C:\Users\iljak\Desktop\IPCameraViewer\VSProject\bin\Debug\AForge.Video.xml
 C:\Users\iljak\Desktop\IPCameraViewer\VSProject\bin\Debug\AForge.xml
 C:\Users\iljak\Desktop\IPCameraViewer\VSProject\bin\Debug\AForge.Math.xml
 C:\Users\iljak\Desktop\IPCameraViewer\VSProject\obj\Debug\IPCameraViewer.csprojAssemblyReference.cache
-C:\Users\iljak\Desktop\IPCameraViewer\VSProject\obj\Debug\IPCameraViever1._0.Form1.resources
 C:\Users\iljak\Desktop\IPCameraViewer\VSProject\obj\Debug\IPCameraViever1._0.Properties.Resources.resources
 C:\Users\iljak\Desktop\IPCameraViewer\VSProject\obj\Debug\IPCameraViewer.csproj.GenerateResource.cache
 C:\Users\iljak\Desktop\IPCameraViewer\VSProject\obj\Debug\IPCameraViewer.csproj.CopyComplete
 C:\Users\iljak\Desktop\IPCameraViewer\VSProject\obj\Debug\IPCameraViever1.0.exe
 C:\Users\iljak\Desktop\IPCameraViewer\VSProject\obj\Debug\IPCameraViever1.0.pdb
+C:\Users\iljak\Desktop\IPCameraViewer\VSProject\obj\Debug\IPCameraViever1._0.Form1.resources

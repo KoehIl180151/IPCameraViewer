@@ -54,7 +54,7 @@
             this.imgOutput.Location = new System.Drawing.Point(2, 2);
             this.imgOutput.Margin = new System.Windows.Forms.Padding(2);
             this.imgOutput.Name = "imgOutput";
-            this.imgOutput.Size = new System.Drawing.Size(581, 255);
+            this.imgOutput.Size = new System.Drawing.Size(589, 284);
             this.imgOutput.TabIndex = 12;
             this.imgOutput.TabStop = false;
             // 
@@ -63,10 +63,10 @@
             this.pnlIPInput.Controls.Add(this.lblIPAdress);
             this.pnlIPInput.Controls.Add(this.txtIPInput);
             this.pnlIPInput.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlIPInput.Location = new System.Drawing.Point(2, 261);
+            this.pnlIPInput.Location = new System.Drawing.Point(2, 290);
             this.pnlIPInput.Margin = new System.Windows.Forms.Padding(2);
             this.pnlIPInput.Name = "pnlIPInput";
-            this.pnlIPInput.Size = new System.Drawing.Size(581, 22);
+            this.pnlIPInput.Size = new System.Drawing.Size(589, 22);
             this.pnlIPInput.TabIndex = 13;
             // 
             // lblIPAdress
@@ -100,14 +100,14 @@
             this.pnlIPInputImgOutput.RowCount = 2;
             this.pnlIPInputImgOutput.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlIPInputImgOutput.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.pnlIPInputImgOutput.Size = new System.Drawing.Size(585, 285);
+            this.pnlIPInputImgOutput.Size = new System.Drawing.Size(593, 314);
             this.pnlIPInputImgOutput.TabIndex = 13;
             // 
             // cmdWindow
             // 
             this.cmdWindow.BackColor = System.Drawing.SystemColors.MenuBar;
             this.cmdWindow.Image = ((System.Drawing.Image)(resources.GetObject("cmdWindow.Image")));
-            this.cmdWindow.Location = new System.Drawing.Point(488, 2);
+            this.cmdWindow.Location = new System.Drawing.Point(496, 2);
             this.cmdWindow.Margin = new System.Windows.Forms.Padding(2);
             this.cmdWindow.Name = "cmdWindow";
             this.cmdWindow.Size = new System.Drawing.Size(29, 29);
@@ -129,14 +129,14 @@
             this.pnlControls.Location = new System.Drawing.Point(0, 0);
             this.pnlControls.Margin = new System.Windows.Forms.Padding(2);
             this.pnlControls.Name = "pnlControls";
-            this.pnlControls.Size = new System.Drawing.Size(585, 36);
+            this.pnlControls.Size = new System.Drawing.Size(593, 36);
             this.pnlControls.TabIndex = 8;
             // 
             // cmdClose
             // 
             this.cmdClose.BackColor = System.Drawing.SystemColors.MenuBar;
             this.cmdClose.Image = ((System.Drawing.Image)(resources.GetObject("cmdClose.Image")));
-            this.cmdClose.Location = new System.Drawing.Point(554, 2);
+            this.cmdClose.Location = new System.Drawing.Point(562, 2);
             this.cmdClose.Margin = new System.Windows.Forms.Padding(2);
             this.cmdClose.Name = "cmdClose";
             this.cmdClose.Size = new System.Drawing.Size(29, 29);
@@ -148,7 +148,7 @@
             // 
             this.cmdMaximize.BackColor = System.Drawing.SystemColors.MenuBar;
             this.cmdMaximize.Image = ((System.Drawing.Image)(resources.GetObject("cmdMaximize.Image")));
-            this.cmdMaximize.Location = new System.Drawing.Point(521, 2);
+            this.cmdMaximize.Location = new System.Drawing.Point(529, 2);
             this.cmdMaximize.Margin = new System.Windows.Forms.Padding(2);
             this.cmdMaximize.Name = "cmdMaximize";
             this.cmdMaximize.Size = new System.Drawing.Size(29, 29);
@@ -160,7 +160,7 @@
             // 
             this.cmdMinimize.BackColor = System.Drawing.SystemColors.MenuBar;
             this.cmdMinimize.Image = ((System.Drawing.Image)(resources.GetObject("cmdMinimize.Image")));
-            this.cmdMinimize.Location = new System.Drawing.Point(455, 2);
+            this.cmdMinimize.Location = new System.Drawing.Point(463, 2);
             this.cmdMinimize.Margin = new System.Windows.Forms.Padding(2);
             this.cmdMinimize.Name = "cmdMinimize";
             this.cmdMinimize.Size = new System.Drawing.Size(29, 29);
@@ -170,7 +170,7 @@
             // 
             // cmdStart
             // 
-            this.cmdStart.Location = new System.Drawing.Point(384, 2);
+            this.cmdStart.Location = new System.Drawing.Point(392, 2);
             this.cmdStart.Margin = new System.Windows.Forms.Padding(2);
             this.cmdStart.Name = "cmdStart";
             this.cmdStart.Size = new System.Drawing.Size(67, 29);
@@ -181,7 +181,7 @@
             // 
             // cmdStop
             // 
-            this.cmdStop.Location = new System.Drawing.Point(313, 2);
+            this.cmdStop.Location = new System.Drawing.Point(321, 2);
             this.cmdStop.Margin = new System.Windows.Forms.Padding(2);
             this.cmdStop.Name = "cmdStop";
             this.cmdStop.Size = new System.Drawing.Size(67, 29);
@@ -192,12 +192,11 @@
             // 
             // pnlDrag
             // 
-            this.pnlDrag.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.pnlDrag.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlDrag.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.pnlDrag.Location = new System.Drawing.Point(2, 2);
             this.pnlDrag.Margin = new System.Windows.Forms.Padding(2);
             this.pnlDrag.Name = "pnlDrag";
-            this.pnlDrag.Size = new System.Drawing.Size(307, 29);
+            this.pnlDrag.Size = new System.Drawing.Size(315, 29);
             this.pnlDrag.TabIndex = 14;
             this.pnlDrag.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouseDOwn_event);
             this.pnlDrag.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mouseMove_event);
@@ -207,7 +206,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 321);
+            this.ClientSize = new System.Drawing.Size(593, 350);
             this.Controls.Add(this.pnlIPInputImgOutput);
             this.Controls.Add(this.pnlControls);
             this.Margin = new System.Windows.Forms.Padding(2);
